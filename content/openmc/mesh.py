@@ -71,7 +71,7 @@ class MeshBase(IDManagerMixin, ABC):
                                'Volumes cannot be provided.')
 
     @classmethod
-    def from_hdf5(cls, group: h5py.Group):
+    def from_hdf5(cls, group):
         """Create mesh from HDF5 group
 
         Parameters
@@ -679,7 +679,7 @@ class RegularMesh(StructuredMesh):
         return string
 
     @classmethod
-    def from_hdf5(cls, group: h5py.Group):
+    def from_hdf5(cls, group):
         mesh_id = int(group.name.split('/')[-1].lstrip('mesh '))
 
         # Read and assign mesh properties
@@ -1112,7 +1112,7 @@ class RectilinearMesh(StructuredMesh):
         return string
 
     @classmethod
-    def from_hdf5(cls, group: h5py.Group):
+    def from_hdf5(cls, group):
         mesh_id = int(group.name.split('/')[-1].lstrip('mesh '))
 
         # Read and assign mesh properties
@@ -1351,7 +1351,7 @@ class CylindricalMesh(StructuredMesh):
         return string
 
     @classmethod
-    def from_hdf5(cls, group: h5py.Group):
+    def from_hdf5(cls, group):
         mesh_id = int(group.name.split('/')[-1].lstrip('mesh '))
 
         # Read and assign mesh properties
@@ -1728,7 +1728,7 @@ class SphericalMesh(StructuredMesh):
         return string
 
     @classmethod
-    def from_hdf5(cls, group: h5py.Group):
+    def from_hdf5(cls, group):
         mesh_id = int(group.name.split('/')[-1].lstrip('mesh '))
 
         # Read and assign mesh properties
@@ -2180,7 +2180,7 @@ class UnstructuredMesh(MeshBase):
         writer.Write()
 
     @classmethod
-    def from_hdf5(cls, group: h5py.Group):
+    def from_hdf5(cls, group):
         mesh_id = int(group.name.split('/')[-1].lstrip('mesh '))
         filename = group['filename'][()].decode()
         library = group['library'][()].decode()
