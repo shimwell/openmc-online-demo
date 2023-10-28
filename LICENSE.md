@@ -1,3 +1,4 @@
+This license applies to the content/openmc folder
 Copyright (c) 2011-2023 Massachusetts Institute of Technology, UChicago Argonne
 LLC, and OpenMC contributors
 
