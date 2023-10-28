@@ -71,36 +71,6 @@ class MeshBase(IDManagerMixin, ABC):
                                'Volumes cannot be provided.')
 
     @classmethod
-    def from_hdf5(cls, group):
-        """Create mesh from HDF5 group
-
-        Parameters
-        ----------
-        group : h5py.Group
-            Group in HDF5 file
-
-        Returns
-        -------
-        openmc.MeshBase
-            Instance of a MeshBase subclass
-
-        """
-
-        mesh_type = group['type'][()].decode()
-        if mesh_type == 'regular':
-            return RegularMesh.from_hdf5(group)
-        elif mesh_type == 'rectilinear':
-            return RectilinearMesh.from_hdf5(group)
-        elif mesh_type == 'cylindrical':
-            return CylindricalMesh.from_hdf5(group)
-        elif mesh_type == 'spherical':
-            return SphericalMesh.from_hdf5(group)
-        elif mesh_type == 'unstructured':
-            return UnstructuredMesh.from_hdf5(group)
-        else:
-            raise ValueError('Unrecognized mesh type: "' + mesh_type + '"')
-
-    @classmethod
     def from_xml_element(cls, elem: ET.Element):
         """Generates a mesh from an XML element
 
