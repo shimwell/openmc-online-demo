@@ -1,6 +1,6 @@
 ## ✨ Try it in your browser ✨
 
-[https://shimwell.github.io/openmc-online-demo/](https://shimwell.github.io/openmc-online-demo/)
+👉 [https://shimwell.github.io/openmc-online-demo/](https://shimwell.github.io/openmc-online-demo/)
 
 ## More Details
 
