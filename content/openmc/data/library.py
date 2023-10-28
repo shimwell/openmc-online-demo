@@ -2,7 +2,7 @@ import os
 import lxml.etree as ET
 import pathlib
 
-import h5py
+# import h5py
 
 import openmc
 from openmc._xml import clean_indentation, reorder_attributes

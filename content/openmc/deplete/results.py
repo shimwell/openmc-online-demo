@@ -5,7 +5,7 @@ import typing  # required to prevent typing.Union namespace overwriting Union
 from typing import Iterable, Optional, Tuple, List
 from warnings import warn
 
-import h5py
+# import h5py
 import numpy as np
 
 from .stepresult import StepResult, VERSION_RESULTS

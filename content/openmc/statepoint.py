@@ -4,7 +4,7 @@ import re
 import os
 import warnings
 
-import h5py
+# import h5py
 import numpy as np
 from uncertainties import ufloat
 

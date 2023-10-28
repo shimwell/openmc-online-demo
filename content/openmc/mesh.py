@@ -7,7 +7,7 @@ from numbers import Integral, Real
 from pathlib import Path
 from typing import Optional, Sequence, Tuple
 
-import h5py
+# import h5py
 import lxml.etree as ET
 import numpy as np
 

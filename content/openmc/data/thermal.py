@@ -10,7 +10,7 @@ import tempfile
 from warnings import warn
 
 import numpy as np
-import h5py
+# import h5py
 
 import openmc.checkvalue as cv
 from openmc.mixin import EqualityMixin

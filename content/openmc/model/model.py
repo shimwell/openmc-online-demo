@@ -10,7 +10,7 @@ import warnings
 import lxml.etree as ET
 from typing import Optional, Dict
 
-import h5py
+# import h5py
 
 import openmc
 import openmc._xml as xml

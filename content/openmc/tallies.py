@@ -7,7 +7,7 @@ import operator
 from pathlib import Path
 import lxml.etree as ET
 
-import h5py
+# import h5py
 import numpy as np
 import pandas as pd
 import scipy.sparse as sps

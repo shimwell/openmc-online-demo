@@ -1,7 +1,7 @@
 from collections import namedtuple
 from collections.abc import Sequence
 
-import h5py
+# import h5py
 
 from .checkvalue import check_filetype_version
 from .source import SourceParticle, ParticleType

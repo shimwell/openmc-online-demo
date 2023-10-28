@@ -17,7 +17,7 @@ import sys
 import time
 import warnings
 
-import h5py
+# import h5py
 import numpy as np
 from scipy import sparse
 

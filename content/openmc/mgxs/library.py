@@ -854,7 +854,7 @@ class Library:
         cv.check_type('filename', filename, str)
         cv.check_type('directory', directory, str)
 
-        import h5py
+        # import h5py
 
         # Make directory if it does not exist
         if not os.path.exists(directory):

@@ -7,7 +7,7 @@ import tempfile
 from warnings import warn
 
 import numpy as np
-import h5py
+# import h5py
 
 from . import HDF5_VERSION, HDF5_VERSION_MAJOR
 from .ace import Library, Table, get_table, get_metadata

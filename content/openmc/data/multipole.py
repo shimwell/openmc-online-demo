@@ -3,7 +3,7 @@ from math import exp, erf, pi, sqrt
 from copy import deepcopy
 
 import os
-import h5py
+# import h5py
 import pickle
 import numpy as np
 from scipy.signal import find_peaks

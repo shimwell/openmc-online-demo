@@ -11,7 +11,7 @@ from typing import Optional, List, Union, Dict
 import lxml.etree as ET
 
 import numpy as np
-import h5py
+# import h5py
 
 import openmc
 import openmc.data
